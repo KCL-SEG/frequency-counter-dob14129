@@ -16,6 +16,6 @@ def frequencies(items):
             keyList.append(str(item))
 
     for i in range(0, len(keyList)):
-        frequencies.append(keyList[i]: keyFreqs[i])
+        frequencies[str(keyList[i])] = str(keyFreqs[i])
 
     return frequencies
