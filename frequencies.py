@@ -14,6 +14,7 @@ def frequencies(items):
                 found = True
         if found == False:
             keyList.append(str(item))
+            keyFreqs.append(1)
 
     for i in range(0, len(keyList)):
         frequencies[str(keyList[i])] = str(keyFreqs[i])
