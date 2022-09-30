@@ -9,7 +9,7 @@ def frequencies(items):
     for item in items:
         found = False
         for i in range(0, len(keyList)):
-            if str(item) == str(keyList[i]):
+            if str(item) == keyList[i]:
                 keyFreqs[i] = keyFreqs[i] + 1
                 found = True
         if found == False:
@@ -17,6 +17,6 @@ def frequencies(items):
             keyFreqs.append(1)
 
     for i in range(0, len(keyList)):
-        frequencies[str(keyList[i])] = str(keyFreqs[i])
+        frequencies[str(keyList[i])] = keyFreqs[i]
 
     return frequencies
